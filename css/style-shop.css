@@ -1,0 +1,183 @@
+/* ?Фильтры*/
+.shop-columns{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	height: 100%;
+}
+.filter{
+	width: 220px;	
+}
+.filter h3{
+	font-size: 24px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+.filter .button{
+	margin-top: 15px;	
+}
+.manufacturer{
+	margin-bottom: 30px ;
+}
+.manufacturers{
+	padding: 0;
+}
+.manufacturer-item{
+	padding-bottom: 12px;
+}
+.manufacturer-checkbox{
+	position: relative;
+	padding-left: 41px;
+	cursor: pointer;
+}
+.manufacturer-checkbox:hover{
+	color: #663d15;
+}
+.manufacturer-checkbox input[type="checkbox"] + .checkbox-indicator{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000;
+}
+
+.manufacturer-checkbox input[type="checkbox"]:checked + .checkbox-indicator{
+	border-color: #000000;
+	outline: 5px auto -webkit-focus-fing-color;
+
+}
+.manufacturer-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.manufacturer-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	width: 15px;
+	height: 2px;
+	background-color: #000000;
+}
+.manufacturer-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+	transform: rotate(45deg);
+}
+.manufacturer-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+	transform: rotate(-45deg);
+}
+
+/* ?Товары*/
+.groups-goods{
+	padding: 0;	
+}
+.groups-goods-item{
+	padding-bottom: 12px;
+}
+.groups-goods-radio{
+	position: relative;
+	padding-left: 41px;
+	cursor: pointer;
+}
+.groups-goods-radio:hover{
+	color: #663d15;
+}
+.groups-goods-radio input[type="radio"] + .radio-indicator{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000;
+}
+.groups-goods-radio input[type="radio"]:checked + .radio-indicator{
+	border-color: #000000;
+	outline: 5px auto -webkit-focus-fing-color;
+
+}
+.groups-goods-radio input[type="radio"]:checked + .radio-indicator::before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #000000;
+}
+.shop-items-wrapper{
+	width: 700px;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-content: flex-start;
+	flex-flow: row wrap;
+	margin-bottom: 25px;
+}
+.shop-item{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-content: flex-start;
+	flex-flow: row wrap;
+	width: 220px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1) ;
+	background-color: rgb(255, 255, 255);
+	transition: 1s;
+
+}
+.shop-item:hover{
+	box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.3) ;
+	transition: 1s;
+}
+.shop-item .name{
+	display: inline-block;
+	width: 100%;
+	min-height: 50px;
+	margin: 5px 16px;
+	text-transform: none;
+}
+.shop-item .name span{
+	text-transform: uppercase;
+}
+
+/* ?Кнопки страниц*/
+.wrapper-button{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-flow: row wrap;
+	margin-bottom: 16px;
+}
+.wrapper-button p{
+	width: 108px;
+	height: 43px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	margin-left: 16px;
+	text-align: center;
+	padding-top: 11px;
+	background-color: #e5e5e5;
+}
+.wrapper-button p:hover{
+	font-size: 16px;
+	transition: 1s;
+}
+.wrapper-button .button{
+	padding: 0 18px;
+	height: 43px;
+
+}
+.wrapper-button .button span{
+	display: inline-block;
+	padding-top: 10px;
+}
+.shop-items-navigation{
+	display: flex;
+}
+.shop-items-navigation .button{
+	margin-right: 7px;
+	padding: 9.5px 18.2px;
+}
+
+
